@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon server.js",
-    "build": "echo 'No build step required',
+    "build": "tsc",
     "start": "node server.js"
   },
   "author": "Google LLC",
