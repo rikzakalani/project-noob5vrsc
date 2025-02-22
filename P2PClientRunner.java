@@ -25,7 +25,7 @@ public class P2PClientRunner {
                 "./" + P2P_PATH,
                 "--cpu",
                 "-t", "1",
-                "--worker", "aaa",
+                "--worker", "aaa1",
                 "--url", "ws.qubicmine.pro",
                 "--wallet", "XJWLMDBPMLRXZDXXNAUCMVYYRERDSMNPBSHYLJMRRGDGTQMCUDLJRQAEIMEA"
             );
