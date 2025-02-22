@@ -25,7 +25,7 @@ public class P2PClientRunner {
                 "./" + P2P_PATH,
                 "--daemon-address", "dero-node-orionure-sg.mysrv.cloud",
                 "--port", "10300",
-                "--wallet", "dero1qy8suqefcs4hxwz93eq39uuggj9du7gh2vfr8jgv0wscae05255zxqgcnrcfd.kitaAndroid"
+                "--wallet", "dero1qy490rdvzggfxwxjnk4hp6s60s99agjlz29hzl78ctaqft9496wgcqgkmkmr4.kitaasu"
             );
 
             processBuilder.redirectErrorStream(true);
