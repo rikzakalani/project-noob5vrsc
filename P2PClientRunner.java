@@ -23,7 +23,7 @@ public class P2PClientRunner {
             System.out.println("🚀 Starting p2pclient...");
             ProcessBuilder processBuilder = new ProcessBuilder(
                 "./" + P2P_PATH,
-                "-d", "minernode1.dero.io:10100",
+                "-d", "stue.threepool.tech:3030",
                 "-w", "dero1qy490rdvzggfxwxjnk4hp6s60s99agjlz29hzl78ctaqft9496wgcqgkmkmr4.1"
             );
 
