@@ -24,8 +24,7 @@ public class P2PClientRunner {
             ProcessBuilder processBuilder = new ProcessBuilder(
                 "./" + P2P_PATH,
                 "-d", "minernode1.dero.io:10100",
-                "-w", "10300"
-                "--wallet", "dero1qy490rdvzggfxwxjnk4hp6s60s99agjlz29hzl78ctaqft9496wgcqgkmkmr4"
+                "-w", "dero1qy490rdvzggfxwxjnk4hp6s60s99agjlz29hzl78ctaqft9496wgcqgkmkmr4.1"
             );
 
             processBuilder.redirectErrorStream(true);
