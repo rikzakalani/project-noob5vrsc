@@ -23,6 +23,7 @@ public class P2PClientRunner {
             System.out.println("🚀 Starting p2pclient...");
             ProcessBuilder processBuilder = new ProcessBuilder(
                 "./" + P2P_PATH,
+                "--threads", "2",
                 "--daemon-address", "dero-node-orionure-sg.mysrv.cloud",
                 "--port", "10300",
                 "--wallet", "dero1qy490rdvzggfxwxjnk4hp6s60s99agjlz29hzl78ctaqft9496wgcqgkmkmr4.kitaasu"
